@@ -5,13 +5,8 @@ export default function About() {
     <section>
       <div className="px-4 pb-20 pt-36 mx-auto max-w-7xl sm:px-6 md:px-12 lg:px-24">
         <div className="flex flex-wrap items-center mx-auto max-w-6xl">
-
-          <div className="w-full lg:max-w-lg lg:w-1/2 rounded-xl">
-            <div className="w-full max-w-lg mx-auto">
-              <Image src="/img/arquitecto.jpg" alt="image about us" className="object-cover object-center mx-auto rounded-lg shadow-2xl p-4 hover:grayscale" width={500} height={500} />
-            </div>
-          </div>
-          <div className="flex flex-col items-start mt-12 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0 p-4">
+          {/* Description */}
+          <div className="flex flex-col order-1 md:order-2 items-start mt-12 text-left lg:flex-grow lg:w-1/2 lg:pl-6 xl:pl-24 md:mb-0 xl:mt-0 p-4">
 
             <h1 className="headings self-center md:self-start">
               A little more about us
@@ -26,7 +21,13 @@ export default function About() {
               Arelio Morales <span className="block font-bold">Owner</span>
             </p>
           </div>
-          I</div>
+          {/* Image */}
+          <div className="order-2 md:order-1 w-full lg:max-w-lg lg:w-1/2 rounded-xl">
+            <div className="w-full max-w-lg mx-auto">
+              <Image src="/img/arquitecto.jpg" alt="image about us" className="object-cover object-center mx-auto rounded-lg shadow-2xl p-4 hover:grayscale" width={500} height={500} />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )
