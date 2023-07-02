@@ -6,7 +6,7 @@ export default function Gallery() {
       <section className=" shadow-2xl bg-white pt-32">
         <div className="carousel-inner relative overflow-hidden w-full md:w-2/4 mx-auto">
 
-          <input className="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" checked hidden />
+          <input className="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" checked hidden readOnly/>
           <div className="carousel-item absolute opacity-0 h-96">
             <Image width={500} height={300} src="/img/slide1.jpg " alt="image house 1" className="block h-full w-full object-cover object-center" />
           </div>
@@ -19,7 +19,7 @@ export default function Gallery() {
             ›
           </label>
 
-          <input className="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" checked hidden />
+          <input className="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" checked hidden readOnly/>
           <div className="carousel-item absolute opacity-0 h-96">
             <Image width={500} height={300} src="/img/slide2.jpg " alt="image house 2" className="block h-full w-full object-cover object-center" />
           </div>
@@ -32,7 +32,7 @@ export default function Gallery() {
             ›
           </label>
 
-          <input className="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" checked hidden />
+          <input className="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" checked hidden readOnly/>
           <div className="carousel-item absolute opacity-0 h-96">
             <Image width={500} height={300} src="/img/slide3.jpg " alt="image house 3" className="block h-full w-full object-cover object-center" />
           </div>

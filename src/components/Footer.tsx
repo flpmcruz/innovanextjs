@@ -9,7 +9,7 @@ export const Footer = () => {
                         className="flex flex-col md:flex-row items-center space-y-8 md:items-start md:space-y-4"
                     >
                         <div className="h-8">
-                            <Image src="img/logoInnova.jpg" width="46" height="46" alt="logo image" className="w-20 md:ml-3" />
+                            <Image src="/img/logoInnova.jpg" width="46" height="46" alt="logo image" className="w-20 md:ml-3" />
                         </div>
 
                         <div

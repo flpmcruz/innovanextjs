@@ -6,7 +6,7 @@ export const Navbar = () => {
             <div className="container mx-auto flex flex-wrap px-5 py-4 flex-row items-center justify-between ">
                 <a href="/" className="flex font-medium items-center md:justify-start justify-center text-gray-900 text-xs md:text-base">
                     <div className="w-10 ">
-                        <Image className="rounded-md" src="img/logoInnova.jpg" width="46" height="46" alt="logo image" />
+                        <Image className="rounded-md" src="/img/logoInnova.jpg" width="46" height="46" alt="logo image" />
                     </div>
                     <span className="ml-3  text-gray-50 uppercase">Innova Construction</span>
                 </a>
