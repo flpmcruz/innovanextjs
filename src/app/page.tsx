@@ -293,7 +293,7 @@ export default function Home() {
                 className="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
               >
                 <p className="py-2 text-justify text-gray-400">
-                  "We offer several flexible payment options for our clients' convenience. You can make payments through bank transfers, credit or debit cards, or checks. Typically, we require an upfront deposit to secure your project's start date. The remaining balance is then paid in installments based on predefined project milestones. We can discuss the specifics and create a payment plan that best suits your financial situation during the contract signing process."
+                  "We offer several flexible payment options for our clients` convenience. You can make payments through bank transfers, credit or debit cards, or checks. Typically, we require an upfront deposit to secure your project`s start date. The remaining balance is then paid in installments based on predefined project milestones. We can discuss the specifics and create a payment plan that best suits your financial situation during the contract signing process."
                 </p>
               </div>
             </div>
@@ -325,7 +325,7 @@ export default function Home() {
                 className="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
               >
                 <p className="py-2 text-justify text-gray-400">
-                  "The duration of construction varies depending on the scope and complexity of the project. A simple remodel may take a few weeks, while constructing a new home from the ground up can take several months. Once we have a clear understanding of your project's specifics, we can provide a more accurate timeline. We're committed to completing projects on time while maintaining high standards of quality and craftsmanship."
+                  "The duration of construction varies depending on the scope and complexity of the project. A simple remodel may take a few weeks, while constructing a new home from the ground up can take several months. Once we have a clear understanding of your project`s specifics, we can provide a more accurate timeline. We`re committed to completing projects on time while maintaining high standards of quality and craftsmanship."
                 </p>
               </div>
             </div>
@@ -357,7 +357,7 @@ export default function Home() {
                 className="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
               >
                 <p className="py-2 text-justify text-gray-400">
-                  "Customer satisfaction is our top priority. If at any point you're not satisfied with the work, we encourage you to communicate your concerns to us. We will do our utmost to address and rectify any issues promptly. Our contract also outlines the necessary steps for dispute resolution to ensure fairness and transparency."
+                  "Customer satisfaction is our top priority. If at any point you`re not satisfied with the work, we encourage you to communicate your concerns to us. We will do our utmost to address and rectify any issues promptly. Our contract also outlines the necessary steps for dispute resolution to ensure fairness and transparency."
                 </p>
               </div>
             </div>
@@ -390,7 +390,7 @@ export default function Home() {
                 className="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
               >
                 <p className="py-2 text-justify text-gray-400">
-                  "Absolutely! We believe that your home should reflect your personal style and preferences. Our team will work closely with you from the initial design stages to ensure your vision becomes a reality. We're here to offer expert advice and guidance, but the final design decisions are always in your hands. We have a wide range of customizable options for layouts, finishes, and materials to choose from."
+                  "Absolutely! We believe that your home should reflect your personal style and preferences. Our team will work closely with you from the initial design stages to ensure your vision becomes a reality. We`re here to offer expert advice and guidance, but the final design decisions are always in your hands. We have a wide range of customizable options for layouts, finishes, and materials to choose from."
                 </p>
               </div>
             </div>
