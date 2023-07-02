@@ -25,13 +25,13 @@ export default function RootLayout({
           src="https://www.googletagmanager.com/gtag/js?id=G-CSWH6BZVCE"
         />
 
-        <Script strategy="afterInteractive" id="my-scriptTag">
+        <Script id="my-inline-script" strategy="afterInteractive">
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-CSWH6BZVCE');
-        `}
+          `}
         </Script>
         <Navbar />
         {children}

@@ -62,7 +62,7 @@ export const Footer = () => {
                         </div>
 
                         <div className="font-bold text-center mr-4 text-gray-300">
-                            &copy; {new Date().getFullYear()} Innova Construction. <span className="block md:inline-block">All Rights Reserved</span>
+                            {new Date().getFullYear()} Innova Construction. <span className="block md:inline-block">All Rights Reserved</span>
                         </div>
                     </div>
                 </div>
