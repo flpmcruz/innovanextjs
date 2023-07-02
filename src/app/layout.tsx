@@ -20,11 +20,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Script
+          id="my-script"
           strategy="afterInteractive"
           src="https://www.googletagmanager.com/gtag/js?id=G-CSWH6BZVCE"
         />
 
-        <Script strategy="afterInteractive">
+        <Script strategy="afterInteractive" id="my-scriptTag">
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
