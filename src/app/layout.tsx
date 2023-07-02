@@ -26,12 +26,10 @@ export default function RootLayout({
         />
 
         <Script id="my-inline-script" strategy="afterInteractive">
-          {`
-          window.dataLayer = window.dataLayer || [];
+          {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-CSWH6BZVCE');
-          `}
+          gtag('config', 'G-CSWH6BZVCE');`}
         </Script>
         <Navbar />
         {children}

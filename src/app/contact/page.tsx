@@ -47,13 +47,14 @@ export default function Contact() {
       phone: '',
       message: '',
     },
-    validationSchema: schemaContact,
+    validationSchema: schemaContact, 
     onSubmit: contactHandler,
   });
 
   return (
     <section className="text-gray-600 ">
       <Script
+        id="my-script-captcha"
         src="https://www.google.com/recaptcha/api.js?render=6LeSCLMfAAAAAN-OEtBuJPYjvKCFXclGknjH11O7">
       </Script>
 

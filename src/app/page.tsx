@@ -257,7 +257,7 @@ export default function Home() {
         <div className="container mx-auto">
           <h2 className="headings">Frequently Asked Questions</h2>
           <p className="max-w-lg px-6 mx-auto text-center">
-            Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
+            Here are some of our FAQs. If you have any other questions you`d like answered please feel free to email us.
           </p>
         </div>
       </section>
@@ -343,7 +343,7 @@ export default function Home() {
                 <div
                   className="transition duration-500 ease group-hover:text-red-500"
                 >
-                  And if I don't like the job
+                  And if I don`t like the job
                 </div>
                 <div
                   className="transition duration-500 ease group-focus:-rotate-180 group-focus:text-red-500"
