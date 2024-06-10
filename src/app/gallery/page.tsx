@@ -8,7 +8,7 @@ export default function Gallery() {
 
           <input className="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" checked hidden readOnly />
           <div className="carousel-item absolute opacity-0 h-96">
-            <Image width={500} height={300} src="/img/slide1.jpg" alt="image house 1" className="block h-full w-full object-cover object-center" />
+            <Image width={500} height={300} src="/fotos/photo_11.jpeg" alt="image house 1" className="block h-full w-full object-cover object-center" />
           </div>
 
           <label htmlFor="carousel-3" className="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">
@@ -21,7 +21,7 @@ export default function Gallery() {
 
           <input className="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" checked hidden readOnly />
           <div className="carousel-item absolute opacity-0 h-96">
-            <Image width={500} height={300} src="/img/slide2.jpg" alt="image house 2" className="block h-full w-full object-cover object-center" />
+            <Image width={500} height={300} src="/fotos/photo_57.jpeg" alt="image house 2" className="block h-full w-full object-cover object-center" />
           </div>
 
           <label htmlFor="carousel-1" className="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">
@@ -34,7 +34,7 @@ export default function Gallery() {
 
           <input className="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" checked hidden readOnly />
           <div className="carousel-item absolute opacity-0 h-96">
-            <Image width={500} height={300} src="/img/slide3.jpg" alt="image house 3" className="block h-full w-full object-cover object-center" />
+            <Image width={500} height={300} src="/fotos/photo_23.jpeg" alt="image house 3" className="block h-full w-full object-cover object-center" />
           </div>
 
           <label htmlFor="carousel-2" className="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">
@@ -57,7 +57,7 @@ export default function Gallery() {
 
           <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
             <div className="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
-              style={{ backgroundImage: `url('/img/gallery-bath.jpg')` }}>
+              style={{ backgroundImage: `url('/fotos/photo_50.jpeg')` }}>
               <div
                 className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
                 <h2 className="mt-4 text-xl font-semibold text-white capitalize">Restrooms</h2>
@@ -66,7 +66,7 @@ export default function Gallery() {
             </div>
 
             <div className="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
-              style={{ backgroundImage: `url('/img/gallery-livingroom.jpg')` }}>
+              style={{ backgroundImage: `url('/fotos/photo_25.jpeg')` }}>
               <div
                 className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
                 <h2 className="mt-4 text-xl font-semibold text-white capitalize">Livingrooms</h2>
@@ -75,7 +75,7 @@ export default function Gallery() {
             </div>
 
             <div className="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group md:col-span-2 xl:col-span-1"
-              style={{ backgroundImage: `url('/img/gallery-room.jpg')` }}>
+              style={{ backgroundImage: `url('/fotos/photo_52.jpeg')` }}>
               <div
                 className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
                 <h2 className="mt-4 text-xl font-semibold text-white capitalize">Bedrooms</h2>

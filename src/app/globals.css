@@ -3,7 +3,7 @@
 @import 'tailwindcss/utilities';
 
 .main-hero {
-  background-image: url("../../public/img/home.jpg");
+  background-image: url("../../public/fotos/photo_10.jpeg");
   height: 40rem;
   background-position: center center;
   background-size: cover;

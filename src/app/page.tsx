@@ -96,7 +96,7 @@ export default function Home() {
               </div>
             </div>
 
-            <Image src="/img/steps.jpg" alt="image steps" width={500} height={300} className="object-cover object-center rounded-lg lg:w-3/5 md:w-1/2 md:mt-0 mt-12 transform hover:scale-105 duration-500 shadow-2xl" />
+            <Image src="/fotos/photo_14.jpeg" alt="image steps" width={500} height={300} className="object-cover object-center rounded-lg lg:w-3/5 md:w-1/2 md:mt-0 mt-12 transform hover:scale-105 duration-500 shadow-2xl" />
           </div>
         </div>
       </section>
@@ -113,7 +113,7 @@ export default function Home() {
             <div className="flex flex-wrap w-1/2">
               <div className="md:p-2 p-1 w-1/2">
                 <Image
-                  src="/img/slide2.jpg"
+                  src="/fotos/photo_40.jpeg"
                   alt="image slide2"
                   width={500} height={300}
                   className="hover:grayscale object-cover rounded-lg w-full h-full object-center block transition hover:rotate-2 hover:scale-95 duration-500"
@@ -122,7 +122,7 @@ export default function Home() {
               </div>
               <div className="md:p-2 p-1 w-1/2">
                 <Image
-                  src="/img/bath1.jpg"
+                  src="/fotos/photo_27.jpeg"
                   alt="image bath 1"
                   width={500}
                   height={300}
@@ -131,7 +131,7 @@ export default function Home() {
               </div>
               <div className="md:p-2 p-1 w-full">
                 <Image
-                  src="/img/bath4.jpg"
+                  src="/fotos/photo_23.jpeg"
                   alt="image bath 4"
                   width={500}
                   height={300}
@@ -142,7 +142,7 @@ export default function Home() {
             <div className="flex flex-wrap w-1/2">
               <div className="md:p-2 p-1 w-full">
                 <Image
-                  src="/img/slide1.jpg"
+                  src="/fotos/photo_7.jpeg"
                   alt="image Slide 1"
                   width={500}
                   height={300}
@@ -151,7 +151,7 @@ export default function Home() {
               </div>
               <div className="md:p-2 p-1 w-1/2">
                 <Image
-                  src="/img/kitchen3.jpg"
+                  src="/fotos/photo_33.jpeg"
                   alt="image kitchen 3"
                   width={500}
                   height={300}
@@ -160,7 +160,7 @@ export default function Home() {
               </div>
               <div className="md:p-2 p-1 w-1/2">
                 <Image
-                  src="/img/kitchen2.jpg"
+                  src="/fotos/photo_56.jpeg"
                   alt="image kitchen 2"
                   width={500}
                   height={300}
