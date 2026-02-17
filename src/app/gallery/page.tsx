@@ -1,4 +1,14 @@
 import Image from 'next/image'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Project Gallery',
+  description: 'Browse our portfolio of completed construction and renovation projects. See our quality work in kitchens, bathrooms, living rooms, and complete home builds.',
+  openGraph: {
+    title: 'Project Gallery | Construction Innova',
+    description: 'Browse our portfolio of completed construction and renovation projects.',
+  },
+}
 
 export default function Gallery() {
   return (

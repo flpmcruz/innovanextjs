@@ -9,26 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "20.3.3",
-    "@types/react": "18.2.14",
-    "@types/react-dom": "18.2.6",
-    "autoprefixer": "10.4.14",
-    "axios": "^1.4.0",
-    "eslint": "8.44.0",
-    "eslint-config-next": "13.4.7",
-    "formik": "^2.4.2",
-    "next": "13.4.7",
-    "nodemailer": "^6.9.3",
-    "phone": "^3.1.37",
-    "postcss": "8.4.24",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "tailwindcss": "3.3.2",
-    "twilio": "^4.13.0",
-    "typescript": "5.1.6",
-    "yup": "^1.2.0"
+    "autoprefixer": "^10.4.20",
+    "axios": "^1.7.9",
+    "formik": "^2.4.6",
+    "next": "^16.1.0",
+    "nodemailer": "^6.9.16",
+    "phone": "^3.1.54",
+    "postcss": "^8.5.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^3.4.17",
+    "twilio": "^5.4.3",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
-    "@types/nodemailer": "^6.4.8"
+    "@types/node": "^22.13.4",
+    "@types/nodemailer": "^6.4.17",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "eslint": "^9.19.0",
+    "eslint-config-next": "^16.1.0",
+    "typescript": "^5.7.3"
   }
 }

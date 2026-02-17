@@ -1,4 +1,14 @@
 import Image from 'next/image'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About Us',
+  description: 'Learn about Construction Innova - your trusted home builders and renovation experts in Alabama. Meet our team and discover our commitment to quality craftsmanship.',
+  openGraph: {
+    title: 'About Us | Construction Innova',
+    description: 'Learn about Construction Innova - your trusted home builders and renovation experts in Alabama.',
+  },
+}
 
 export default function About() {
   return (
