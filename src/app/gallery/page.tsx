@@ -48,7 +48,7 @@ export default function Gallery() {
 
       <section className="bg-white dark:bg-gray-900 pt-10">
         <div className="container px-6 py-10 mx-auto">
-          <h1 className="headings">Know our work
+          <h1 className="headings text-gray-500 dark:text-gray-300">Know our work
           </h1>
 
           <p className="mt-4 text-center text-gray-500 dark:text-gray-300 text-2xl">
@@ -61,7 +61,7 @@ export default function Gallery() {
               <div
                 className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
                 <h2 className="mt-4 text-xl font-semibold text-white capitalize">Restrooms</h2>
-                <a href="tel:+12512842842" className="mt-2 text-lg text-blue-400 ">Call us htmlFor more</a>
+                <a href="tel:+12512842842" className="mt-2 text-lg text-blue-400 ">Call us For more</a>
               </div>
             </div>
 
@@ -70,7 +70,7 @@ export default function Gallery() {
               <div
                 className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
                 <h2 className="mt-4 text-xl font-semibold text-white capitalize">Livingrooms</h2>
-                <a href="tel:+12512842842" className="mt-2 text-lg text-blue-400 ">Call us htmlFor more</a>
+                <a href="tel:+12512842842" className="mt-2 text-lg text-blue-400 ">Call us For more</a>
               </div>
             </div>
 
@@ -79,7 +79,7 @@ export default function Gallery() {
               <div
                 className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
                 <h2 className="mt-4 text-xl font-semibold text-white capitalize">Bedrooms</h2>
-                <a href="tel:+12512842842" className="mt-2 text-lg text-blue-400 ">Call us htmlFor more</a>
+                <a href="tel:+12512842842" className="mt-2 text-lg text-blue-400 ">Call us For more</a>
               </div>
             </div>
           </div>
