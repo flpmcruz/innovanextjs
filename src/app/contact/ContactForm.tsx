@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import Script from 'next/script';
 import { FormikValues, useFormik } from 'formik';
-import axios from 'axios';
 import { schemaContact } from '@/utils/schemas/contact';
 
 export default function ContactForm() {
@@ -20,22 +19,25 @@ export default function ContactForm() {
         process.env.NEXT_PUBLIC_RECAPTCHA_KEY
       );
 
-      const res = await axios.post("/api/contact", {
-        ...values, captcha,
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...values, captcha }),
       });
+      const data = await res.json();
 
-      if (res.data.ok) {
-        setSuccess(res.data.message);
-        setLoading(false)
-        formik.resetForm();
-        setTimeout(() => setSuccess(""), 5000);
-        return
-      };
+      if (!res.ok) {
+        throw new Error(data.message || "Something went wrong");
+      }
 
-    } catch (error: any) {
+      setSuccess(data.message);
+      setLoading(false);
+      formik.resetForm();
+      setTimeout(() => setSuccess(""), 5000);
+    } catch (error) {
       setLoading(false);
       setSuccess("");
-      setError(error.response.data.message);
+      setError(error instanceof Error ? error.message : "Something went wrong");
       setTimeout(() => setError(""), 5000);
     }
   };
