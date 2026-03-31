@@ -1,28 +1,7 @@
 @import 'tailwindcss';
 @config '../../tailwind.config.js';
 
-.main-hero {
-  background-image: url("../../public/fotos/photo_10.jpeg");
-  height: 40rem;
-  background-position: center center;
-  background-size: cover;
-  /*     background-attachment: fixed; /* //efecto parallax */
-  padding: 5rem 0;
-  text-align: center;
-  background-repeat: no-repeat;
-}
-
-.menu-items {
-  @apply tracking-wide cursor-pointer px-3 py-2 rounded hover:text-rose-600 font-bold transition hover:bg-white;
-}
-
-.headings {
-  @apply text-4xl font-extrabold text-center mb-10;
-}
-
-/* Contact Us */
-.bg-image {
-  background-image: url("../../public/img/mapa-alabama.jpg");
-  background-repeat: no-repeat;
-  background-cover: cover;
+/* Hide reCAPTCHA badge — attribution text is shown inline per Google's ToS */
+.grecaptcha-badge {
+  visibility: hidden !important;
 }

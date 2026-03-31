@@ -1,102 +1,147 @@
-import Image from 'next/image'
-import { WhyChooseUs, Faqs, Testimonials } from '@/components/'
+import Image from "next/image";
+import Link from "next/link";
+import { WhyChooseUs, Faqs, Testimonials } from "@/components/";
 
 export default function Home() {
   return (
     <>
-      {/* HEADER */}
-      <section
-        className="relative main-hero "
-      >
-        <div
-          className="absolute inset-0 bg-white/50 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/50 sm:to-white/25"
-        ></div>
+      {/* HERO */}
+      <section className="relative min-h-screen flex items-center">
+        <Image
+          src="/fotos/photo_10.jpeg"
+          alt="Construction Innova project"
+          fill
+          priority
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-gray-900/60 to-gray-900/30" />
 
-        <div
-          className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:items-center lg:px-12 md:pb-60 xl:pb-80"
-        >
-          <div className="max-w-xl text-center sm:text-left">
-            <h2 className="text-5xl font-extrabold sm:text-5xl">
+        <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 w-full">
+          <div className="max-w-2xl">
+            <p className="text-indigo-400 font-semibold tracking-widest uppercase text-sm mb-4">
+              Home Builders & Renovation
+            </p>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-tight">
               We Build
-              <strong className="block font-extrabold text-rose-700">
-                Your Dream
-              </strong>
-            </h2>
-
-            <h1 className="inline-block px-2 my-4 py-2 sm:text-left text-2xl sm:leading-relaxed bg-white/70 rounded-lg shadow-md font-semibold text-center md:text-left">
-              Home Builders and Renovation
+              <span className="block text-rose-500">Your Dream</span>
             </h1>
-
-            <div className="mt-8 flex flex-wrap gap-4 text-center">
+            <p className="mt-6 text-lg text-gray-300 max-w-lg leading-relaxed">
+              Professional construction and renovation services in Alabama.
+              Quality craftsmanship, on-time delivery, and competitive pricing.
+            </p>
+            <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <a
                 href="tel:+12512842842"
-                className="block w-1/2 rounded-md mx-auto sm:ml-0 bg-rose-600 sm:px-12 py-3 text-xl font-medium text-white shadow hover:bg-rose-700 hover:scale-105 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto duration-500"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-rose-600 px-8 py-4 text-lg font-semibold text-white shadow-lg hover:bg-rose-700 transition-all duration-300 hover:shadow-rose-600/25 hover:-translate-y-0.5"
               >
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
                 (251) 284-2842
               </a>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center rounded-lg border-2 border-white/30 px-8 py-4 text-lg font-semibold text-white hover:bg-white/10 transition-all duration-300 hover:-translate-y-0.5"
+              >
+                Get a Free Quote
+              </Link>
             </div>
           </div>
         </div>
+
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+          <svg
+            className="w-6 h-6 text-white/60"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            />
+          </svg>
+        </div>
       </section>
 
-      {/* WHT TO CHOOSE US */}
+      {/* WHY CHOOSE US */}
       <WhyChooseUs />
 
       {/* HOW IT WORKS */}
-      <section className="text-gray-600 body-font bg-gray-100 py-24">
-        <h2 className="headings">How it works</h2>
+      <section className="py-24 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-indigo-600 font-semibold tracking-widest uppercase text-sm mb-3">
+              Simple Process
+            </p>
+            <h2 className="text-4xl font-extrabold text-gray-900">
+              How It Works
+            </h2>
+          </div>
 
-        <div className="container px-5 mx-auto lg:w-8/12 flex flex-wrap">
-          <div className="flex flex-wrap w-full relative justify-center">
-            <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
-              <div className="flex relative pb-12">
-                <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-                  <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-10">
+              {[
+                {
+                  step: "01",
+                  title: "Contact & Consultation",
+                  description:
+                    "Contact us and we will meet shortly to analyze your request and prepare a detailed quote.",
+                },
+                {
+                  step: "02",
+                  title: "Agreement & Start",
+                  description:
+                    "Once the fee is agreed and the deposit is paid, we start your project right away.",
+                },
+                {
+                  step: "03",
+                  title: "Delivery",
+                  description:
+                    "We deliver the keys to your new home with all the licenses and documents ready.",
+                },
+              ].map((item) => (
+                <div key={item.step} className="flex gap-6">
+                  <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-indigo-600 flex items-center justify-center">
+                    <span className="text-white font-bold text-lg">
+                      {item.step}
+                    </span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
                 </div>
-
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-                  <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                  </svg>
-                </div>
-
-                <div className="flex-grow pl-4">
-                  <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 1</h2>
-                  <p className="leading-relaxed">Contact us and we will meet shortly to analyze your request and make the quote.</p>
-                </div>
-              </div>
-
-              <div className="flex relative pb-12">
-                <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
-                  <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
-                </div>
-
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-                  <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                  </svg>
-                </div>
-                <div className="flex-grow pl-4">
-                  <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">STEP 2</h2>
-                  <p className="leading-relaxed">Once the fee is agreed, and the agreed percentage is paid, we will start the project</p>
-                </div>
-              </div>
-
-              <div className="flex relative">
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative z-10">
-                  <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
-                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                    <path d="M22 4L12 14.01l-3-3"></path>
-                  </svg>
-                </div>
-                <div className="flex-grow pl-4">
-                  <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">FINISH</h2>
-                  <p className="leading-relaxed">We are ready to deliver the keys to your new home with all the licenses and documents</p>
-                </div>
-              </div>
+              ))}
             </div>
 
-            <Image src="/fotos/photo_14.jpeg" alt="image steps" width={500} height={300} className="object-cover object-center rounded-lg lg:w-3/5 md:w-1/2 md:mt-0 mt-12 transform hover:scale-105 duration-500 shadow-2xl" />
+            <div className="relative">
+              <div className="absolute -inset-4 bg-indigo-100 rounded-3xl -rotate-2" />
+              <Image
+                src="/fotos/photo_14.jpeg"
+                alt="Construction project in progress"
+                width={600}
+                height={450}
+                className="relative rounded-2xl object-cover w-full shadow-xl"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -104,70 +149,52 @@ export default function Home() {
       {/* TESTIMONIALS */}
       <Testimonials />
 
-      {/* GALLERY */}
-      <section className="text-gray-600 body-font pb-24">
-        <h2 className="headings">Image Gallery</h2>
+      {/* GALLERY PREVIEW */}
+      <section className="py-24 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-indigo-600 font-semibold tracking-widest uppercase text-sm mb-3">
+              Portfolio
+            </p>
+            <h2 className="text-4xl font-extrabold text-gray-900">
+              Our Recent Work
+            </h2>
+          </div>
 
-        <div className="container px-5 mx-auto flex flex-wrap">
-          <div className="flex flex-wrap md:-m-2 -m-1">
-            <div className="flex flex-wrap w-1/2">
-              <div className="md:p-2 p-1 w-1/2">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {[40, 27, 23, 7, 33, 56].map((n) => (
+              <div key={n} className="overflow-hidden rounded-xl group">
                 <Image
-                  src="/fotos/photo_40.jpeg"
-                  alt="image slide2"
-                  width={500} height={300}
-                  className="hover:grayscale object-cover rounded-lg w-full h-full object-center block transition hover:rotate-2 hover:scale-95 duration-500"
+                  src={`/fotos/photo_${n}.jpeg`}
+                  alt={`Construction project ${n}`}
+                  width={500}
+                  height={400}
+                  className="w-full h-48 sm:h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
+              </div>
+            ))}
+          </div>
 
-              </div>
-              <div className="md:p-2 p-1 w-1/2">
-                <Image
-                  src="/fotos/photo_27.jpeg"
-                  alt="image bath 1"
-                  width={500}
-                  height={300}
-                  className="hover:grayscale object-cover rounded-lg w-full h-full object-center block transition hover:rotate-2 hover:scale-95 duration-500"
+          <div className="text-center mt-12">
+            <Link
+              href="/gallery"
+              className="inline-flex items-center gap-2 rounded-lg bg-indigo-600 px-8 py-4 text-lg font-semibold text-white shadow-lg hover:bg-indigo-700 transition-all duration-300 hover:-translate-y-0.5"
+            >
+              View All Projects
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
                 />
-              </div>
-              <div className="md:p-2 p-1 w-full">
-                <Image
-                  src="/fotos/photo_23.jpeg"
-                  alt="image bath 4"
-                  width={500}
-                  height={300}
-                  className="hover:grayscale object-cover rounded-lg w-full h-full object-center block transition hover:rotate-2 hover:scale-95 duration-500"
-                />
-              </div>
-            </div>
-            <div className="flex flex-wrap w-1/2">
-              <div className="md:p-2 p-1 w-full">
-                <Image
-                  src="/fotos/photo_7.jpeg"
-                  alt="image Slide 1"
-                  width={500}
-                  height={300}
-                  className="hover:grayscale object-cover rounded-lg w-full h-full object-center block transition hover:rotate-2 hover:scale-95 duration-500"
-                />
-              </div>
-              <div className="md:p-2 p-1 w-1/2">
-                <Image
-                  src="/fotos/photo_33.jpeg"
-                  alt="image kitchen 3"
-                  width={500}
-                  height={300}
-                  className="hover:grayscale object-cover rounded-lg w-full h-full object-center block transition hover:rotate-2 hover:scale-95 duration-500"
-                />
-              </div>
-              <div className="md:p-2 p-1 w-1/2">
-                <Image
-                  src="/fotos/photo_56.jpeg"
-                  alt="image kitchen 2"
-                  width={500}
-                  height={300}
-                  className="hover:grayscale object-cover rounded-lg w-full h-full object-center block transition hover:rotate-2 hover:scale-95 duration-500"
-                />
-              </div>
-            </div>
+              </svg>
+            </Link>
           </div>
         </div>
       </section>
@@ -175,5 +202,5 @@ export default function Home() {
       {/* FAQS */}
       <Faqs />
     </>
-  )
+  );
 }

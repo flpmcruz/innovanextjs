@@ -68,12 +68,19 @@ export default function Gallery() {
 
   return (
     <section className="bg-white pt-32 pb-20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <h1 className="headings text-gray-800">Our Work</h1>
-        <p className="text-center text-gray-500 text-lg max-w-2xl mx-auto mb-10">
-          Custom designs for all needs. We are specialists in urban areas and
-          beach areas.
-        </p>
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <p className="text-indigo-600 font-semibold tracking-widest uppercase text-sm mb-3">
+            Portfolio
+          </p>
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
+            Our Work
+          </h1>
+          <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+            Custom designs for all needs. We are specialists in urban areas and
+            beach areas.
+          </p>
+        </div>
 
         {/* Category filters */}
         <div className="flex flex-wrap justify-center gap-2 mb-12">

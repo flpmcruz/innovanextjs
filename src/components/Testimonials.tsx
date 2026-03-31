@@ -1,42 +1,77 @@
-
 const content = [
-    {
-        comment: "Innova Construction is an amazing company with caring employees. They are at the top of our builder list for professionalism, accurate scheduling, and timely communication (just to name a few). Anybody who wants the best in designing and building should go visit their show room and and check out all their awards!",
-        name: "Richard Jr",
-    },
-    {
-        comment: "They did a complete build out of our basement. Their quality of work is superior. They came in and did the design, helped us with color choices and they finished ON TIME! The construction crew was professional, clean and courteous. I would highly recommend them for their any remodel project you are considering.",
-        name: "Jhon Cruise",
-    },
-]
+  {
+    comment:
+      "Innova Construction is an amazing company with caring employees. They are at the top of our builder list for professionalism, accurate scheduling, and timely communication (just to name a few). Anybody who wants the best in designing and building should go visit their show room and check out all their awards!",
+    name: "Richard Jr",
+  },
+  {
+    comment:
+      "They did a complete build out of our basement. Their quality of work is superior. They came in and did the design, helped us with color choices and they finished ON TIME! The construction crew was professional, clean and courteous. I would highly recommend them for any remodel project you are considering.",
+    name: "Jhon Cruise",
+  },
+];
 
 export const Testimonials = () => {
-    return (
-        <section className="text-gray-600 body-font">
-            <div className="container px-5 py-24 mx-auto lg:w-8/12">
-                <h2 className="headings">Testimonials</h2>
+  return (
+    <section className="py-24">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <p className="text-indigo-600 font-semibold tracking-widest uppercase text-sm mb-3">
+            What Our Clients Say
+          </p>
+          <h2 className="text-4xl font-extrabold text-gray-900">
+            Testimonials
+          </h2>
+        </div>
 
-                <div className="flex flex-wrap -m-4">
-                    {
-                        content.map((item, index) => (
-                            <div key={index} className="p-4 md:w-1/2 w-full">
-                                <div className="h-full bg-gray-100 p-8 rounded">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
-                                        <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-                                    </svg>
-                                    <p className="leading-relaxed mb-6">{item.comment}</p>
-                                    <p className="inline-flex items-center">
-                                        <span className="flex-grow flex flex-col pl-4">
-                                            <span className="title-font font-medium text-gray-900">{item.name}</span>
-                                            <span className="text-gray-700 text-sm">CLIENT</span>
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
-                        ))
-                    }
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {content.map((item) => (
+            <div
+              key={item.name}
+              className="relative rounded-2xl bg-white p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow duration-300"
+            >
+              {/* Quote mark */}
+              <svg
+                className="absolute top-6 right-8 w-12 h-12 text-indigo-100"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11h4v10H0z" />
+              </svg>
+
+              {/* Stars */}
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg
+                    key={i}
+                    className="w-5 h-5 text-amber-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+
+              <p className="text-gray-600 leading-relaxed mb-6 relative z-10">
+                &ldquo;{item.comment}&rdquo;
+              </p>
+
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">
+                    {item.name.charAt(0)}
+                  </span>
                 </div>
+                <div>
+                  <p className="font-semibold text-gray-900">{item.name}</p>
+                  <p className="text-sm text-gray-500">Client</p>
+                </div>
+              </div>
             </div>
-        </section>
-    )
-}
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
