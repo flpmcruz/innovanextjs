@@ -3,7 +3,6 @@ import * as yup from "yup";
 import { schemaContact } from "@/utils/schemas/contact";
 import { checkCaptcha } from "@/utils/checkCaptcha";
 import { contactTemplate, sendMail } from "@/utils/emails/";
-import { sendSMS } from "@/utils/smsTwillio";
 
 export async function POST(request: Request) {
   const { name, email, captcha, phone, message } = await request.json();
@@ -19,10 +18,6 @@ export async function POST(request: Request) {
       msg: contactTemplate(name, email, phone, message),
     };
     await sendMail(info);
-
-    await sendSMS(
-      `Un cliente le ha contactado: ${name} ${email} ${phone} ${message}`
-    );
 
     return NextResponse.json(
       { ok: true, message: "Message sent!!!" },
